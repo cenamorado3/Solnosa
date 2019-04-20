@@ -1,0 +1,338 @@
+﻿<style>
+    body {
+        color: rgb(153,153,153);
+    }
+
+    h3 {
+        text-align: center;
+        color: rgb(153,153,153);
+    }
+
+    h3:hover {
+        color: #ffffff;
+    }
+
+    h6
+    {
+        text-align:center;
+    }
+
+
+
+    .Experience 
+    {
+        margin-top: 100px;
+    }
+
+    .job {
+        padding: 20px;
+        background-color: #0c0d16;
+    }
+
+    .transform {
+        padding: 20px;
+        color: rgb(153,153,153);
+        background-color: #0c0d16;
+    }
+
+    #button {
+        text-align: center;
+        color: rgb(153,153,153);
+        background-color: #0c0d16;
+    }
+
+    #wrapper {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+
+        #wrapper.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button1 {
+        text-align: center;
+    }
+    #wrapper1 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+        #wrapper1.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button2 {
+        text-align: center;
+    }
+
+    #wrapper2 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+        #wrapper2.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button3 {
+        text-align: center;
+    }
+    #wrapper3 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+        #wrapper3.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button4 {
+        text-align: center;
+    }
+    #wrapper4 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+        #wrapper4.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button5 {
+        text-align: center;
+    }
+    #wrapper5 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+        #wrapper5.open {
+            transition: max-height ease-in-out 500ms;
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+</style>
+<html>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var b = $("#button");
+            var w = $("#wrapper");
+
+            b.click(function () {
+                if (w1.hasClass('open')) {
+                    w1.toggleClass('open')
+                }
+
+                if (w2.hasClass('open')) {
+                    w2.toggleClass('open')
+                }
+
+                if (w3.hasClass('open')) {
+                    w3.toggleClass('open')
+                }
+
+                if (w4.hasClass('open')) {
+                    w4.toggleClass('open')
+                }
+
+                if (w5.hasClass('open')) {
+                    w5.toggleClass('open')
+                }
+
+                w.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            })
+
+
+            var b1 = $("#button1");
+            var w1 = $("#wrapper1");
+            b1.click(function () {
+                if (w.hasClass('open')) {
+                    w.toggleClass('open')
+                }
+
+                if (w2.hasClass('open')) {
+                    w2.toggleClass('open')
+                }
+
+                if (w3.hasClass('open')) {
+                    w3.toggleClass('open')
+                }
+
+                if (w4.hasClass('open')) {
+                    w4.toggleClass('open')
+                }
+
+                if (w5.hasClass('open')) {
+                    w5.toggleClass('open')
+                }
+
+                w1.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            });
+
+            var b2 = $("#button2");
+            var w2 = $("#wrapper2");
+            var pre = $("#prewrap")
+            b2.click(function () {
+                if (w.hasClass('open')) {
+                    w.toggleClass('open')
+                }
+
+                if (w1.hasClass('open')) {
+                    w1.toggleClass('open')
+                }
+
+                if (w3.hasClass('open')) {
+                    w3.toggleClass('open')
+                }
+
+                if (w4.hasClass('open')) {
+                    w4.toggleClass('open')
+                }
+
+                if (w5.hasClass('open')) {
+                    w5.toggleClass('open')
+                }
+
+                w2.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            });
+
+            var b3 = $("#button3");
+            var w3 = $("#wrapper3");
+            var pre = $("#prewrap")
+            b3.click(function () {
+                if (w.hasClass('open')) {
+                    w.toggleClass('open')
+                }
+
+                if (w1.hasClass('open')) {
+                    w1.toggleClass('open')
+                }
+
+                if (w2.hasClass('open')) {
+                    w2.toggleClass('open')
+                }
+
+                if (w4.hasClass('open')) {
+                    w4.toggleClass('open')
+                }
+
+                if (w5.hasClass('open')) {
+                    w5.toggleClass('open')
+                }
+
+                w3.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            });
+
+
+            var b4 = $("#button4");
+            var w4 = $("#wrapper4");
+            var pre = $("#prewrap")
+            b4.click(function () {
+                if (w.hasClass('open')) {
+                    w.toggleClass('open')
+                }
+
+                if (w1.hasClass('open')) {
+                    w1.toggleClass('open')
+                }
+
+                if (w2.hasClass('open')) {
+                    w2.toggleClass('open')
+                }
+
+                if (w3.hasClass('open')) {
+                    w3.toggleClass('open')
+                }
+
+                if (w5.hasClass('open')) {
+                    w5.toggleClass('open')
+                }
+
+                w4.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            });
+
+            var b5 = $("#button5");
+            var w5 = $("#wrapper5");
+            var pre = $("#prewrap")
+            b5.click(function () {
+                if (w.hasClass('open')) {
+                    w.toggleClass('open')
+                }
+
+                if (w1.hasClass('open')) {
+                    w1.toggleClass('open')
+                }
+
+                if (w2.hasClass('open')) {
+                    w2.toggleClass('open')
+                }
+
+                if (w3.hasClass('open')) {
+                    w3.toggleClass('open')
+                }
+
+                if (w4.hasClass('open')) {
+                    w4.toggleClass('open')
+                }
+
+                w5.toggleClass('open'); /* <-- toggle the application of the open class on click */
+            });
+
+        });
+    </script>
+
+    <div class="Experience">
+
+        <div class="transform" id="button">
+            <h3>Production Support Analyst at HPA, A Cognizat Company </h3>
+            <h6>February 2017 - March 2019</h6>
+            <p id="wrapper">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="job" id="button1">
+            <h3>Repair Technician at OriginPC</h3>
+            <h6>February 2016 - February 2017</h6>
+            <p id="wrapper1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="job" id="button2">
+            <h3>IT Support at ITNetworx</h3>
+            <h6>October 2015 - January 2016</h6>
+            <p id="wrapper2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="job" id="button3">
+            <h3>Freelance Computer Technician</h3>
+            <h6>April 2015 - January 2016</h6>
+            <p id="wrapper3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="job" id="button4">
+            <h3>Sales Associate at Tiger Direct</h3>
+            <h6>February 2015 - December 2015</h6>
+            <p id="wrapper4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="job" id="button5">
+            <h3>Production Assistant at ACME Production Services</h3>
+            <h6>February 2014 - November 2015</h6>
+            <p id="wrapper5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
+</body>
+</html>

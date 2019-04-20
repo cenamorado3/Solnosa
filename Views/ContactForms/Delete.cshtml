@@ -1,0 +1,69 @@
+﻿@model MyWebsite.Models.ContactForm
+
+
+<style>
+    .dl-horizontal {
+        background-color: #222222;
+        color: rgb(153,153,153);
+        margin-top: 200px;
+        padding: 20px;
+    }
+</style>
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ContactForm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        @Html.ActionLink("Home", "Index", "Home")
+    </div>
+    }
+</div>

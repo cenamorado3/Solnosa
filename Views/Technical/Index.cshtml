@@ -1,0 +1,122 @@
+﻿<style>
+    h3:hover {
+    }
+
+    .techItems {
+        color: rgb(153,153,153);
+        background-color: #0c0d16;
+        margin-top: 100px;
+    }
+
+    .techItem {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #button {
+        text-align: center;
+    }
+    #wrapper {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+    #wrapper.open {
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button1 {
+        text-align: center;
+    }
+    #wrapper1 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+    #wrapper1.open {
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+
+    #button2 {
+        text-align: center;
+    }
+    #wrapper2 {
+        overflow: hidden;
+        transition: max-height ease-in-out 500ms;
+        max-height: 0; /* <---hide by default */
+    }
+    #wrapper2.open {
+            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+            $(function () {
+                var b = $("#button");
+                var w = $("#wrapper");
+
+                b.click(function ()
+                {
+                    if (w1.hasClass('open')) {
+                        w1.toggleClass('open')
+                    }
+
+                    if (w2.hasClass('open')) {
+                        w2.toggleClass('open')
+                    }
+
+                    w.toggleClass('open'); /* <-- toggle the application of the open class on click */
+                })
+
+
+                var b1 = $("#button1");
+                var w1 = $("#wrapper1");
+                b1.click(function ()
+                {
+                    if (w.hasClass('open')) {
+                        w.toggleClass('open')
+                    }
+
+                    if (w2.hasClass('open')) {
+                        w2.toggleClass('open')
+                    }
+                    w1.toggleClass('open'); /* <-- toggle the application of the open class on click */
+                });
+
+                var b2 = $("#button2");
+                var w2 = $("#wrapper2");
+                var pre = $("#prewrap")
+                b2.click(function () {
+                    if (w.hasClass('open')) {
+                        w.toggleClass('open')
+                    }
+
+                    if (w1.hasClass('open')) {
+                        w1.toggleClass('open')
+                    }
+                    w2.toggleClass('open'); /* <-- toggle the application of the open class on click */
+                });
+            });
+</script>
+
+<div class="techItems">
+    <div class="techItem" id="button">
+        <h3>Windows (UIA)User Interface Automation</h3>
+        <p id="wrapper">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+    <div class="techItem" id="button1">
+        <h3>Website UIA using Selenium</h3>
+        <p id="wrapper1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+    <div class="techItem" id="button2">
+        <h3>Microsoft's (MVC)Model View Controller Websites</h3>
+        <p id="wrapper2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+</div>

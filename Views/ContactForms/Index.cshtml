@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MyWebsite.Models.ContactForm>
+<h2>Index</h2>
+
+<style>
+    .table {
+        background-color: #222222;
+        color: rgb(153,153,153);
+        margin-top: 200px;
+        padding: 20px;
+    }
+
+    h4 {
+        color: rgb(153,153,153);
+    }
+</style>
+
+<h4>INDEX</h4>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+    </tr>
+}
+
+</table>
