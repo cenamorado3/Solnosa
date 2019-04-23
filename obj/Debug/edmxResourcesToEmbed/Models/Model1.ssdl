@@ -8,8 +8,8 @@
     <Property Name="Phone" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Reason" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Seen" Type="char" MaxLength="1" />
-    <Property Name="ContactDate" Type="varchar" MaxLength="20" />
-    <Property Name="Message" Type="varchar" MaxLength="500" />
+    <Property Name="ContactDate" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="500" Nullable="false" />
   </EntityType>
   <EntityContainer Name="DatabaseModelStoreContainer">
     <EntitySet Name="ContactForm" EntityType="Self.ContactForm" Schema="dbo" store:Type="Tables" />

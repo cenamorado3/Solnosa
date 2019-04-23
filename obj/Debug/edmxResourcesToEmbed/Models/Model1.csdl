@@ -8,8 +8,8 @@
     <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Reason" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Seen" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
-    <Property Name="ContactDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ContactDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <EntityContainer Name="WebsiteEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="ContactForms" EntityType="Self.ContactForm" />

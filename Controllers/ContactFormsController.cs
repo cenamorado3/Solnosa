@@ -16,10 +16,10 @@ namespace MyWebsite.Controllers
         private WebsiteEntities db = new WebsiteEntities();
 
         // GET: ContactForms
-        public ActionResult Index()
-        {
-            return View(db.ContactForms.ToList());
-        }
+        //public ActionResult Index()
+        //{
+        //    return View("Contact");
+        //}
 
         public ActionResult Submitted()
         {
@@ -79,13 +79,22 @@ namespace MyWebsite.Controllers
                 return View(contactForm);
             }
 
-            catch(Exception e)
+            catch(DbEntityValidationException dbEx)
             {
-                Console.WriteLine(e);
-                System.Threading.Thread.Sleep(1000);
+                Exception raise = dbEx;
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        string message = string.Format("{0}:{1}",
+                        validationErrors.Entry.Entity.ToString(),
+                        validationError.ErrorMessage);
+                        raise = new InvalidOperationException(message, raise);
+                    }
+                }
+                //throw raise;
                 return RedirectToAction("Error");
             }
-
 
         }
 

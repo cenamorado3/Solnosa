@@ -9,6 +9,9 @@
 
 namespace MyWebsite.Models
 {
+    using System;
+    using System.Collections.Generic;
+    
     public partial class ContactForm
     {
         public string Email { get; set; }
