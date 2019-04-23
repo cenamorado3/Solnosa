@@ -138,11 +138,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #714cdf;
-  text-decoration: none;
-  background-color: transparent; }
+    color: #009cdf;
+    text-decoration: none;
+    background-color: transparent;
+}
     a:hover {
-        color: #fec70d;
+        color: #72aed8;
         text-decoration: underline;
     }
 
@@ -2254,25 +2255,29 @@ fieldset:disabled a.btn {
   pointer-events: none; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #714cdf;
-  border-color: #714cdf; }
-  .btn-primary:hover {
     color: #fff;
-    background-color: #572cd9;
-    border-color: #5126d2; }
+    background-color: #009ade;
+    border-color: #009cdf;
+}
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #20bff0;
+        border-color: #20bff0;
+    }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 103, 228, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(134, 103, 228, 0.5); }
-  .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #714cdf;
-    border-color: #714cdf; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #5126d2;
-    border-color: #4d24c8; }
+    .btn-primary.disabled, .btn-primary:disabled {
+        color: #fff;
+        background-color: #009ade;
+        border-color: #009ade;
+    }
+    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #009ade;
+        border-color: #009ade;
+    }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(134, 103, 228, 0.5);
@@ -5677,12 +5682,12 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #714cdf !important; }
+  background-color: #009cdf !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #5126d2 !important; }
+  background-color: #009cdf !important; }
 
 .bg-secondary {
   background-color: #16a4de !important; }
@@ -8679,15 +8684,16 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 3.5rem; } }
 
 body {
-  background-image: url("Images/solnosa_purp_dark_web.png"); }
+  background-image: url("Images/solnosa.png"); }
 
 .btn-shadow {
   margin-left: 8px; }
-  .btn-shadow.btn-primary, .btn-shadow.btn-outline-primary {
-    border-color: #986edf;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none; }
+    .btn-shadow.btn-primary, .btn-shadow.btn-outline-primary {
+        border-color: #009ade;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
     .btn-shadow.btn-primary, .btn-shadow.btn-primary.focus, .btn-shadow.btn-primary:focus, .btn-shadow.btn-outline-primary, .btn-shadow.btn-outline-primary.focus, .btn-shadow.btn-outline-primary:focus {
       -webkit-box-shadow: 3px 3px 0 #986edf, 2px 2px 0 #986edf, 1px 1px 0 #986edf;
               box-shadow: 3px 3px 0 #986edf, 2px 2px 0 #986edf, 1px 1px 0 #986edf; }

@@ -1,12 +1,12 @@
 ﻿<style>
     h3:hover {
-        color: #2cc3f2;
+        color: #72aed8;
     }
 
     .techItems {
-        color: #5689ad;
+        color: #72aed8;
         background-color: #0c0d16;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .techItem {
@@ -21,10 +21,17 @@
         overflow: hidden;
         transition: max-height ease-in-out 500ms;
         max-height: 0; /* <---hide by default */
-    }
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+}
     #wrapper.open {
-            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
-        }
+        transition: max-height ease-in-out 500ms;
+        max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        -webkit-transition: all 5s ease;
+        -o-transition: all 5s ease;
+        transition: all 5s ease;
+    }
 
     #button1 {
         text-align: center;
@@ -33,10 +40,17 @@
         overflow: hidden;
         transition: max-height ease-in-out 500ms;
         max-height: 0; /* <---hide by default */
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
     }
     #wrapper1.open {
-            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
-        }
+        transition: max-height ease-in-out 500ms;
+        max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        -webkit-transition: all 5s ease;
+        -o-transition: all 5s ease;
+        transition: all 5s ease;
+    }
 
     #button2 {
         text-align: center;
@@ -45,9 +59,19 @@
         overflow: hidden;
         transition: max-height ease-in-out 500ms;
         max-height: 0; /* <---hide by default */
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
     }
     #wrapper2.open {
-            max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        transition: max-height ease-in-out 500ms;
+        max-height: 1000px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+        -webkit-transition: all 5s ease;
+        -o-transition: all 5s ease;
+        transition: all 5s ease;
+    }
+
+        p{
         }
 </style>
 
@@ -102,22 +126,37 @@
 </script>
 
 <div class="techItems">
+    <div class="techItem" id="button2">
+        <h3>MVC Websites with Entity Framework and ADO.Net</h3>
+        <p id="wrapper2">
+            Porting my knowledge of C# into ASP.Net this website was born, now while the design and layout would probably make some go on a Riot(js pun intended), it's still in the works.
+            But like most most programmers being more interested on the backend side of things my real goal was to set one of two things, an emailer and email listener or a database for users
+            to submit their contact info to that I would then set up and manage. The latter was chosen and which was implemented using Entity Framework and ADO.Net to set up methods for data insertion
+            into a database which I set up, the real fun comes in as I begin to set up constraints and set up my own "business rules" to prevent users from doings I don't necessarily want them to do just
+            like we would in the real world and handling all those errors and edge cases.
+        </p>
+    </div>
     <div class="techItem" id="button">
         <h3>Windows (UIA)User Interface Automation</h3>
         <p id="wrapper">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            When you're surrounded by people colloborating doing something you love their thoughts become infectious, and this is a prime example of that, while working as an Analyst at a
+            start up that specialized in Healthcare claims automation I began to wonder, how exactly did they do that? I asked a few questions and got a few answers and got to work, now
+            doing it their way would be their solution not my own, so my inner creative rebel came out, now I certainly followed in their example as far as design and structure
+            of the framework but the last thing I wanted was a robot that could only process Healthcare claims, there would be no fun in that and... I couldn't really test in that enviorment with realworld claims,
+            So I started off with simple clicks and keypresses taking hello world to the next level and while it's still in it's infancy and I've really only done small unit tests, I've been able to interact with multiple software,
+            and even automated some my own work task using it! Similiar to its predecessor, the end goal is to take the human element out of boring and repetive processces to free up that time for people to shine in their own human ways.
         </p>
     </div>
     <div class="techItem" id="button1">
         <h3>Website UIA using Selenium</h3>
         <p id="wrapper1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            This was my first foray into automation, using Selenium a lot of the ground work was already there, with a bit of knowledge of HTML
+            and a some DOM know how, you can start pointing it to the the right tag and letting it take over and letting the automation take over,
+            super useful for website QA or simply having a robot pay your bills for you. There is a lot of backend knowledge to be had has to how
+            the drivers interact with the browser you're using and even how langugages such as Java and Javascript handle
+            different kinds of windows, pop-ups and dialogs, but armed with the right knowledge very quickly you can begin writing scripts to automate
+            these websites.
         </p>
     </div>
-    <div class="techItem" id="button2">
-        <h3>Microsoft's (MVC)Model View Controller Websites</h3>
-        <p id="wrapper2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
-    </div>
+
 </div>

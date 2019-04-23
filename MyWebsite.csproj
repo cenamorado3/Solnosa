@@ -159,7 +159,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContactFormsController.cs" />
     <Compile Include="Controllers\TechnicalController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -193,6 +192,7 @@
     <Content Include="Content\bootstrap4-neon-glow.css" />
     <Content Include="Content\bootstrap4-neon-glow.min.css" />
     <Content Include="Content\Images\honeyCombDarkLogo.png" />
+    <Content Include="Content\Images\solnosa.png" />
     <Content Include="Content\Images\solnosa_purp_dark.png" />
     <Content Include="Content\Images\solnosa_purp_dark_web.png" />
     <Content Include="favicon.ico" />
@@ -247,10 +247,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Technical\Index.cshtml" />
-    <Content Include="Views\ContactForms\Create.cshtml" />
+    <Content Include="Views\ContactForms\Contact.cshtml" />
     <Content Include="Views\ContactForms\Delete.cshtml" />
     <Content Include="Views\ContactForms\Details.cshtml" />
     <Content Include="Views\ContactForms\Edit.cshtml" />

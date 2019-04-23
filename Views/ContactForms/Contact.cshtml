@@ -1,0 +1,124 @@
+﻿@model MyWebsite.Models.ContactForm
+
+<style>
+    .header {
+        position:absolute;
+        left: 45%;
+    }
+
+    .form-horizontal {
+        background-color: #0c0d16;
+        color: #72aed8;
+        margin-top: 50px;
+        padding: 20px;
+        display: flex;
+    }
+
+    .contactColumn {
+        margin-top: 145px;
+        padding: 20px;
+    }
+
+    .form {
+        margin: 25px;
+        margin-top: 50px;
+    }
+
+    .form-group {
+    }
+
+    .label {
+        color: #72aed8;
+        text-align: left;
+        font-size: 1em;
+        margin-left: 5px;
+    }
+
+    .form-input {
+        color: #72aed8;
+        padding: 10px;
+    }
+
+    .form-control {
+        color: #72aed8;
+    }
+
+    .form-control-message {
+        background-color: #28293e;
+        color: #72aed8;
+        width: 500px;
+        height: 100px;
+    }
+
+    .button {
+        margin-left: 110px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+
+<div class="form-horizontal">
+    <div class="header">
+        <h3>Contact Me!</h3>
+    </div>
+
+    <div class="form">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "label" })
+            <div class="form-input">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "label" })
+            <div class="form-input">
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Reason, htmlAttributes: new { @class = "label" })
+            <div class="form-input">
+                @Html.EditorFor(model => model.Reason, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Reason, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "label" })
+            <div class="form-input">
+                @Html.TextAreaFor(model => model.Message, new { @class = "form-control-message" })
+                @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="button">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contactColumn">
+        <p>
+            Whether you have questions, are curious about my work, or maybe even would like to extend a job offer, please fill out the form and I'll get back to you as soon as I can, I promise!
+            <br />
+            <br />
+            Additionally if you're curious about any of the work listed on the Technical Page, <a href="https://github.com/cenamorado3">here is a link to my GitHub </a>, if you don't see a projected listed, use the form to reach out,
+            I likely have it set to a private method for a reason.
+        </p>
+    </div>
+
+</div>
+}
